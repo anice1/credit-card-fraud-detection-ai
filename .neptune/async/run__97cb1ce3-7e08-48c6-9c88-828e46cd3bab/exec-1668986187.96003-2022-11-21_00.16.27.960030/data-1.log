@@ -1,0 +1,83 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "CosmoRemits-MacBook-Pro.local"}, "version": 3}
+{"obj": {"type": "AddStrings", "path": ["sys", "tags"], "values": ["CCFD (Scaled)"]}, "version": 4}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 6}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 7}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "/Users/cosmoremit/Documents/AcNice/credit-card-fraud-detection/src/train.py"}, "version": 8}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["/Users/cosmoremit/Documents/AcNice/credit-card-fraud-detection/model.py, featurize.py, train.py"], "reset": "False"}, "version": 9}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker CosmoRemits-MacBook-Pro.local.", "step": null, "ts": 1668986189.705408}, {"value": "Marking run as failed", "step": null, "ts": 1668986189.705408}, {"value": "Traceback:", "step": null, "ts": 1668986189.705408}, {"value": "  File \"/Users/cosmoremit/Documents/AcNice/credit-card-fraud-detection/src/train.py\", line 39, in <module>\n    model = neptune.init_model(\n", "step": null, "ts": 1668986189.705408}, {"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/utils/deprecation.py\", line 61, in inner\n    return f(*args, **kwargs)\n", "step": null, "ts": 1668986189.705408}, {"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/init/model.py\", line 89, in init_model\n    api_model = backend.get_metadata_container(container_id=model_id, expected_container_type=Model.container_type)\n", "step": null, "ts": 1668986189.705408}, {"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/backends/utils.py\", line 111, in wrapper\n    return func(*args, **kwargs)\n", "step": null, "ts": 1668986189.705408}, {"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/backends/hosted_neptune_backend.py\", line 307, in get_metadata_container\n    raise MetadataContainerNotFound.of_container_type(\n", "step": null, "ts": 1668986189.705408}, {"value": "Model anochima/ccfd/LOGISTIC-REGRESSION not found.", "step": null, "ts": 1668986189.705408}]}, "version": 10}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 11}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1668986189.7057579}]}, "version": 12}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/backends/hosted_neptune_backend.py\", line 289, in get_metadata_container\n", "step": null, "ts": 1668986189.705954}]}, "version": 13}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.7074199}]}, "version": 14}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "self.leaderboard_client.api.getExperiment(", "step": null, "ts": 1668986189.707536}]}, "version": 15}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.707628}]}, "version": 16}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/backends/swagger_client_wrapper.py\", line 89, in __call__\n", "step": null, "ts": 1668986189.7078311}]}, "version": 17}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.710042}]}, "version": 18}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "self.handle_neptune_http_errors(e.response, exception=e)", "step": null, "ts": 1668986189.7102048}]}, "version": 19}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.7103229}]}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/backends/swagger_client_wrapper.py\", line 82, in handle_neptune_http_errors\n", "step": null, "ts": 1668986189.710457}]}, "version": 21}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.711107}]}, "version": 22}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "raise exception", "step": null, "ts": 1668986189.711214}]}, "version": 23}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.7113018}]}, "version": 24}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/backends/swagger_client_wrapper.py\", line 87, in __call__\n", "step": null, "ts": 1668986189.711387}]}, "version": 25}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.711724}]}, "version": 26}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return FinishedApiResponseFuture(future.response())  # wait synchronously", "step": null, "ts": 1668986189.71183}]}, "version": 27}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.711919}]}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/bravado/http_future.py\", line 200, in response\n", "step": null, "ts": 1668986189.712074}]}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.7138891}]}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "swagger_result = self._get_swagger_result(incoming_response)", "step": null, "ts": 1668986189.714199}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.714315}]}, "version": 32}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/bravado/http_future.py\", line 124, in wrapper\n", "step": null, "ts": 1668986189.716418}]}, "version": 33}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.716775}]}, "version": 34}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return func(self, *args, **kwargs)", "step": null, "ts": 1668986189.7169049}]}, "version": 35}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.717021}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/bravado/http_future.py\", line 300, in _get_swagger_result\n", "step": null, "ts": 1668986189.717144}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.717462}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "unmarshal_response(", "step": null, "ts": 1668986189.717587}]}, "version": 39}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.71774}]}, "version": 40}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/bravado/http_future.py\", line 353, in unmarshal_response\n", "step": null, "ts": 1668986189.717825}]}, "version": 41}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.718053}]}, "version": 42}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "raise_on_expected(incoming_response)", "step": null, "ts": 1668986189.718139}]}, "version": 43}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.718219}]}, "version": 44}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/bravado/http_future.py\", line 420, in raise_on_expected\n", "step": null, "ts": 1668986189.718306}]}, "version": 45}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.718579}]}, "version": 46}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "raise make_http_exception(", "step": null, "ts": 1668986189.718663}]}, "version": 47}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.718744}]}, "version": 48}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "bravado.exception", "step": null, "ts": 1668986189.718876}]}, "version": 49}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ".", "step": null, "ts": 1668986189.718981}]}, "version": 50}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "HTTPNotFound", "step": null, "ts": 1668986189.719063}]}, "version": 51}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1668986189.719157}]}, "version": 52}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "404 ", "step": null, "ts": 1668986189.719232}]}, "version": 53}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.719311}]}, "version": 54}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\nDuring handling of the above exception, another exception occurred:\n\n", "step": null, "ts": 1668986189.719388}]}, "version": 55}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1668986189.7194638}]}, "version": 56}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/Documents/AcNice/credit-card-fraud-detection/src/train.py\", line 39, in <module>\n", "step": null, "ts": 1668986189.719542}]}, "version": 57}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.7197409}]}, "version": 58}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "model = neptune.init_model(", "step": null, "ts": 1668986189.7198222}]}, "version": 59}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.719899}]}, "version": 60}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/utils/deprecation.py\", line 61, in inner\n", "step": null, "ts": 1668986189.719976}]}, "version": 61}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.720163}]}, "version": 62}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return f(*args, **kwargs)", "step": null, "ts": 1668986189.720242}]}, "version": 63}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.7203178}]}, "version": 64}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/init/model.py\", line 89, in init_model\n", "step": null, "ts": 1668986189.720396}]}, "version": 65}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.720594}]}, "version": 66}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "api_model = backend.get_metadata_container(container_id=model_id, expected_container_type=Model.container_type)", "step": null, "ts": 1668986189.721004}]}, "version": 67}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.7210932}]}, "version": 68}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/backends/utils.py\", line 111, in wrapper\n", "step": null, "ts": 1668986189.7211761}]}, "version": 69}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.721379}]}, "version": 70}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "return func(*args, **kwargs)", "step": null, "ts": 1668986189.721461}]}, "version": 71}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.721539}]}, "version": 72}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/envs/ccfd/lib/python3.10/site-packages/neptune/new/internal/backends/hosted_neptune_backend.py\", line 307, in get_metadata_container\n", "step": null, "ts": 1668986189.721618}]}, "version": 73}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1668986189.721843}]}, "version": 74}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "raise MetadataContainerNotFound.of_container_type(", "step": null, "ts": 1668986189.721955}]}, "version": 75}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.722036}]}, "version": 76}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "neptune.new.exceptions", "step": null, "ts": 1668986189.723546}]}, "version": 77}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ".", "step": null, "ts": 1668986189.7236722}]}, "version": 78}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "ModelNotFound", "step": null, "ts": 1668986189.723757}]}, "version": 79}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1668986189.723837}]}, "version": 80}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Model anochima/ccfd/LOGISTIC-REGRESSION not found.", "step": null, "ts": 1668986189.723914}]}, "version": 81}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1668986189.725109}]}, "version": 82}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1668986189.7254982}]}, "version": 83}
