@@ -1,0 +1,25 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "CosmoRemits-MacBook-Pro.local"}, "version": 3}
+{"obj": {"type": "AddStrings", "path": ["sys", "tags"], "values": ["ENSEMBLE"]}, "version": 4}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 6}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 7}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "/Users/cosmoremit/Documents/AcNice/credit-card-fraud-detection/src/train.py"}, "version": 8}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["/Users/cosmoremit/Documents/AcNice/credit-card-fraud-detection/model.py, featurize.py, train.py, env.toml"], "reset": "False"}, "version": 9}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker CosmoRemits-MacBook-Pro.local.", "step": null, "ts": 1669334651.3745751}, {"value": "Marking run as failed", "step": null, "ts": 1669334651.3745751}, {"value": "Traceback:", "step": null, "ts": 1669334651.3745751}, {"value": "  File \"/Users/cosmoremit/Documents/AcNice/credit-card-fraud-detection/src/train.py\", line 64, in <module>\n    train_adaboost = train(\n", "step": null, "ts": 1669334651.3745751}, {"value": "  File \"/Users/cosmoremit/Documents/AcNice/credit-card-fraud-detection/src/toolkit.py\", line 29, in train\n    roc_auc = roc_auc_score(val_y, y_pred[:, 1])\n", "step": null, "ts": 1669334651.3745751}, {"value": "too many indices for array: array is 1-dimensional, but 2 were indexed", "step": null, "ts": 1669334651.3745751}]}, "version": 10}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 11}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1669334651.374932}]}, "version": 12}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/Documents/AcNice/credit-card-fraud-detection/src/train.py\", line 64, in <module>\n", "step": null, "ts": 1669334651.375214}]}, "version": 13}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1669334651.3761501}]}, "version": 14}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "train_adaboost = train(", "step": null, "ts": 1669334651.376265}]}, "version": 15}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1669334651.376368}]}, "version": 16}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/cosmoremit/Documents/AcNice/credit-card-fraud-detection/src/toolkit.py\", line 29, in train\n", "step": null, "ts": 1669334651.378515}]}, "version": 17}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1669334651.378997}]}, "version": 18}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "roc_auc = roc_auc_score(val_y, y_pred[:, 1])", "step": null, "ts": 1669334651.379115}]}, "version": 19}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1669334651.3820841}]}, "version": 20}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "IndexError", "step": null, "ts": 1669334651.382245}]}, "version": 21}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1669334651.382357}]}, "version": 22}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "too many indices for array: array is 1-dimensional, but 2 were indexed", "step": null, "ts": 1669334651.382453}]}, "version": 23}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1669334651.382553}]}, "version": 24}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1669334651.383195}]}, "version": 25}

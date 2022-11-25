@@ -1,1 +1,6 @@
+# /model.pkl
+/adaboost.pkl
+/knn.pkl
+/logistic_reg.pkl
 /model.pkl
+/random_forest.pkl

@@ -30,7 +30,11 @@ migrate:
 run: 
 	python3 src/prepare.py
 	python3 src/featurize.py
-	python3 src/train.py
+	python3 src/estimator_training/adaboost.py
+	python3 src/estimator_training/random_forest.py
+	python3 src/estimator_training/knn.py
+	python3 src/estimator_training/logistic_regression.py
+	python3 src/estimator_training/voting.py
 	make clean
 
 .PHONY: help
